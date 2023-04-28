@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itzkavinram-Full Stack Developer</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: 'Tilt Neon', cursive;
+
+        }
+
+        .header {
+            position: sticky;
+            top: 0px;
+            background: #080808;
+            max-height: 40vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+
+        }
+
+        .logo,
+        li {
+            color: rgb(255, 255, 255);
+        }
+
+        .logo:hover {
+            color: blueviolet;
+        }
+
+        .logo {
+            /* float: left; */
+            font-family: 'Tilt Neon', cursive;
+            padding-left: 150px;
+            font-size: 35px;
+            animation-name: logo_animation;
+            animation-duration: 2s;
+            /* animation-iteration-count: 2; */
+            /* animation-direction: alternate; */
+            animation-timing-function: ease;
+            /* animation-delay: 2s; */
+        }
+
+        @keyframes logo_animation {
+
+            0% {
+                transform: translateY(-23px);
+            }
+
+        }
+
+
+        ul {
+            margin: 10px 0px;
+            padding-right: 150px;
+            animation-name: nav_animation;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+
+        }
+
+        @keyframes nav_animation {
+            0% {
+                transform: translateY(-23px);
+            }
+
+
+
+        }
+
+        li {
+            display: inline;
+            padding: 15px;
+            font-family: 'Tilt Neon', cursive;
+            font-size: 20px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blueviolet;
+            /* font-size: 21px;
+            transition: all ease 0.2s; */
+        }
+
+        a:active {
+            color: blueviolet;
+        }
+
+        .hero_banner {
+            height: 650px;
+            background: #080808;
+            background-image: url("./Images/Banner\ Images.jpg");
+            background-size: cover;
+            background-position: 0%;
+            opacity: 7;
+            /* display: flex; */
+        }
+
+
+        .main_heading,
+        .intro,
+        .job_role {
+            font-family: 'Tilt Neon', cursive;
+            font-size: 55px;
+            text-align: left;
+            padding: 0 250px;
+            color: rgb(2, 0, 0);
+            font-weight: 100;
+            animation-name: demo;
+            animation-duration: 2s;
+            /* animation-iteration-count: 2; */
+            /* animation-direction: alternate; */
+            animation-timing-function: ease;
+            /* animation-delay: 2s; */
+        }
+
+        .intro {
+            padding-top: 250px;
+            font-size: 25px;
+        }
+
+        .job_role {
+            padding-bottom: 050px;
+            font-size: 30px;
+        }
+
+        .hire_me {
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            margin-left: 250px;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background: blueviolet;
+            animation-name: hire-button;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+        }
+
+        @keyframes hire-button {
+            0% {
+                transform: translateY(300px);
+            }
+        }
+
+        .hire_me:hover {
+            background: rgb(86, 22, 146);
+        }
+
+        @keyframes demo {
+            0% {
+                transform: translateY(-300px);
+            }
+        }
+
+        /* img {
+            position: relative;
+            top: 150px;
+        } */
+
+        .about,
+        .services,
+        .contact {
+
+            padding: 75px 0px;
+            background: #080808;
+        }
+
+        .about_Heading,
+        .services_Heading,
+        .contact_Heading {
+            color: white;
+            font-size: 45px;
+            font-family: 'Tilt Neon', cursive;
+            text-align: center;
+        }
+
+        .about_Description {
+            font-family: 'Tilt Neon', cursive;
+            color: white;
+            font-size: 20px;
+            padding: 50px 300px 50px 300px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .service_headings {
+            font-size: 30px;
+            padding: 15px 0px;
+        }
+
+        .services_Description {
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+
+        }
+
+        .contac_form {
+            text-align: left;
+            position: relative;
+            /* left: 50%; */
+            padding: 50px 250px 50px 300px;
+            padding-left: 500px;
+
+        }
+
+        label {
+            font-family: 'Tilt Neon', cursive;
+            font-size: 20px;
+            text-align: left;
+            color: white;
+        }
+
+        input {
+            font-size: 18px;
+            margin: 20px 0;
+            padding: 13px;
+            width: 75%;
+        }
+
+
+        /* placeholder {
+            font-family: 'Tilt Neon', cursive;
+        } */
+
+        .form_button {
+            font-size: 20px;
+            font-family: 'Tilt Neon', cursive;
+            color: white;
+            background: blueviolet;
+            padding: 10px;
+            position: relative;
+            left: 15%;
+            width: 40%;
+
+
+
+        }
+
+        .footer_Bottom {
+            padding: 10px;
+            color: white;
+            background: #080808;
+            font-family: 'Tilt Neon', cursive;
+            font-size: 25px;
+            font-weight: 100;
+            border-top: 1px solid white;
+            text-align: center;
+        }
+
+        .service_headings {
+            color: white;
+        }
+
+        .services_container {
+            display: flex;
+            padding: 25px;
+        }
+
+        .service_containerone,
+        .service_containertwo,
+        .service_containerthree,
+        .service_containerfour {
+            background-color: #352e2e46;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .service_containerone:hover {
+            background-color: #241b1b46;
+        }
+
+        .service_containertwo:hover {
+            background-color: #241b1b46;
+        }
+
+        .service_containerthree:hover {
+            background-color: #241b1b46;
+        }
+
+        .service_containerfour:hover {
+            background-color: #241b1b46;
+        }
+
+        @media only screen and (max-width:768px) {
+
+            html,
+            body {
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            .header {
+                flex-direction: column;
+                max-height: 40vh;
+            }
+
+            .logo {
+                padding: 0px;
+                font-size: 35px;
+                text-align: center;
+            }
+
+
+            ul {
+                margin: 20px 0px;
+                padding: 0px;
+                text-align: center;
+
+            }
+
+            .hero_banner {
+                height: 200px;
+            }
+
+            .main_heading,
+            .intro,
+            .job_role {
+                padding: 0 25px;
+                padding-top: 0;
+                font-size: 25px;
+                animation-name: demo;
+                animation-duration: 2s;
+                /* animation-iteration-count: 2; */
+                /* animation-direction: alternate; */
+                animation-timing-function: ease;
+                /* animation-delay: 2s; */
+            }
+
+            .intro {
+                padding-top: 30px;
+                font-size: 15px;
+            }
+
+            .job_role {
+                padding-bottom: 5px;
+                font-size: 20px;
+            }
+
+            .hire_me {
+                font-size: 13px;
+                position: relative;
+                margin: 15px 25px;
+                padding: 10px;
+                border-radius: 20PX;
+            }
+
+            @keyframes hire-button {
+                0% {
+                    transform: translateY(30px);
+                }
+            }
+
+            @keyframes demo {
+                0% {
+                    transform: translateY(-30px);
+                }
+
+                /* 25% {
+                transform: translateY(20px);
+            }  */
+
+                /* 50% {
+                    transform: translate(4px, 4px);
+                
+                }
+
+                75% {
+                transform: translateX(200px);
+           }  */
+
+                /* 100% {
+                    transform: translateY(0px);
+                } */
+            }
+
+            .about,
+            .services,
+            .contact {
+                border: none;
+                padding: 25px 0px;
+            }
+
+            .about_Heading,
+            .services_Heading,
+            .contact_Heading {
+                font-size: 25px;
+            }
+
+            .about_Description {
+                padding: 10px 30px;
+                text-align: justify;
+                font-size: 14px;
+            }
+
+            .services {
+                padding: 10px;
+            }
+
+            .services_container {
+                flex-direction: column;
+            }
+
+            .service_containerone,
+            .service_containertwo,
+            .service_containerthree,
+            .service_containerfour {
+                text-align: center;
+            }
+
+            .service_headings {
+                font-size: 20px;
+            }
+
+            .services_Description {
+                font-size: 15px;
+            }
+
+            .contac_form {
+                text-align: left;
+                position: relative;
+
+                padding: 50px;
+            }
+
+            input {
+
+                width: 100%;
+            }
+
+            .form_button {
+                font-size: 20px;
+                font-family: 'Tilt Neon', cursive;
+                color: white;
+                background: blueviolet;
+                padding: 10px;
+                position: relative;
+                left: 32%;
+                width: 40%;
+
+
+
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <h1 class="logo animate__animated animate__bounce">itzkavinram</h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#section1">About</a></li>
+            <li><a href="#section2">Services</a></li>
+            <li><a href="#section3">Contact</a></li>
+        </ul>
+    </div>
+    <div class="hero_banner">
+        <p class="intro">hello, I'm</p>
+        <h1 class="main_heading"><b>Kavin Ramalingam</b></h1>
+        <p class="job_role">React Developer</p>
+        <button class="hire_me">HIRE ME</button>
+        <!-- <img src="./Images/Banner.png" alt="Banner" width="300" height="250"> -->
+    </div>
+    <div class="about" id="section1">
+        <h1 class="about_Heading">About me</h1>
+        <p class="about_Description">Hi I'm Kavin Ram . The copy warned the Little Blind Text, that where it came from
+            it would have been rewritten a thousand times and everything that was left from its origin would be the word
+            "and" and the Little Blind Text should turn around and return to its own, safe country.
+
+            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One
+            day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+            Grammar.</p>
+        <img src="#" alt="" width="" height="">
+    </div>
+    <div class="services" id="section2">
+        <h1 class="services_Heading">Services</h1>
+        <div class="services_container">
+            <div class="service_containerone">
+                <h2 class="service_headings">Website Development</h2>
+                <p class="services_Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                    temporibus
+                </p>
+            </div>
+            <div class="service_containertwo">
+                <h2 class="service_headings">Digital Marketing</h2>
+                <p class="services_Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                    temporibus
+                </p>
+            </div>
+            <div class="service_containerthree">
+                <h2 class="service_headings">Seo</h2>
+                <p class="services_Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                    temporibus
+                </p>
+            </div>
+            <div class="service_containerfour">
+                <h2 class="service_headings">Mobile Application</h2>
+                <p class="services_Description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                    temporibus
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact" id="section3">
+        <h1 class="contact_Heading">Contact me</h1>
+        <form class="contac_form">
+
+            <label>Name</label><br>
+            <input type="text" placeholder="Enter your Name"><br>
+            <label>Mail Id</label><br>
+            <input type="email" placeholder="Enter your mail id"><br>
+            <label>Phone Number</label><br>
+            <input type="tel" placeholder="Enter your mobile Number"><br>
+            <!-- <input type="submit"> -->
+            <button class="form_button">Submit</button>
+        </form>
+    </div>
+    <div class="footer_Bottom">
+        <h6>All Rights Reserved</h6>
+    </div>
+
+
+
+</body>
+
+
+
+
+</html>

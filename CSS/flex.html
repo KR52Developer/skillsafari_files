@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="CSS-Flex">
+
+    <title>CSS-Flex</title>
+    <style>
+        /* 
+        row
+        main-axis=>x-axis
+        cross-axis=>y-axis
+
+        column 
+        main-axis=>y-axis
+        cross-axis=>x-axis
+
+
+        display:flex(row)
+        flex-direction
+        flex-wrap
+        justify-content
+        align-items
+        order
+        gap
+        flex-grow
+        flex-shrink
+        flex-basis
+        flex shorthand property
+        align-slef */
+        .parent {
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+
+            /* align-items: baseline; */
+            
+            height: 100vh;
+            
+          
+        }
+
+        .child {
+            border: 3px solid green;
+            width: 200px;
+
+        }
+
+        .child-1 {
+            background: purple;
+            height: 200px;
+            flex-grow:1;
+        }
+
+        .child-2 {
+            background: rgb(232, 84, 16);
+            height: 300px;
+            flex-grow:1;
+        }
+
+        .child-3 {
+            background: rgb(62, 199, 13);
+            height: 400px;
+            flex-grow:1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child child-1">One</div>
+        <div class="child child-2">Two</div>
+        <div class="child child-3">Three</div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Condition</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        let name = prompt("Enter Donor Name");
+        let age = prompt("Enter Donor Age", 18);
+        let weight = prompt("Enter Donor Weight", 60);
+        let bloodPressure = +prompt("Enter Donor bloodpressure", 100);
+        let bloodGroup = Boolean(prompt("Donor of same bloodGroup?"));
+        let diseases = Boolean(prompt("Donor has any disease?"));
+        let alcohol = Boolean(prompt("Donor consumed alchohol"));
+
+
+        if (age < 18) {
+            console.log("Donor is not Eligible to donate blood")
+
+        } else if (weight < 60) {
+            console.log("Your weightis low.You are not not Eligible to donate blood")
+
+        } else if (bloodPressure > 100) {
+            console.log("Your Blood pressure is Low.You are not eligible")
+
+        } else if (bloodGroup === false) {
+            console.log("Your Blood Group is not same.You are not eligible")
+
+        } else if (diseases === true) {
+            console.log("Donor is not eligible")
+
+        } else if (alcohol === true) {
+            console.log("Donor is not eligible")
+
+        } else {
+            console.log("Donor is eligible to donate blood")
+
+        }
+
+        console.log(`Name:${name}`);
+        console.log(`Weight:${weight}`);
+        console.log(`Blood PRessure:${bloodPressure}`);
+        console.log(`BloodGroup:${bloodGroup}`);
+        console.log(`diseases:${diseases}`);
+        console.log(`Alcohol:${alcohol}`);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Map Method">
+    <title>Map method</title>
+</head>
+
+<body>
+    <script>
+        
+        let students = [{
+                id: 1001,
+                name: "John",
+                age: 23,
+                dept: "CSE"
+            },
+            {
+                id: 1002,
+                name: "Jack",
+                age: 20,
+                dept: "IT"
+            },
+            {
+                id: 1003,
+                name: "Mary",
+                age: 18,
+                dept: "ECE"
+            },
+            {
+                id: 1004,
+                name: "Robert",
+                age: 21,
+                dept: "EEE"
+            },
+            {
+                id: 1005,
+                name: "Prince",
+                age: 20,
+                dept: "MECH"
+            },
+            {
+                id: 1003,
+                name: "Ram",
+                age: 18,
+                dept: "CIVIL"
+            },
+        ];
+        let newStudents = students.map((student) => {
+            return {
+                ...student,
+                college: "SkillSafari",
+            };
+        });
+        console.log(newStudents);
+    </script>
+</body>
+
+</html>

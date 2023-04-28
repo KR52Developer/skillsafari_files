@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="JavaScript Interaction Prompt">
+    <title>JavaScript Interaction Prompt</title>
+</head>
+
+<body>
+
+    <script>
+        let title = "USER DETAILS";
+        let divider = "---------------------------------------";
+        let firstName = prompt("Enter Your Firstname", "John");
+        let lastName = prompt("Enter Your lastName", "Wick");
+        let emailId = prompt("Enter Your Mail ID", "abc@gmail.com");
+        let phoneNumber = prompt("Enter Your Phone Number", "99999 99999");
+        let course = prompt("Enter Your Course", "Mern Full Stack");
+        let age = prompt("Enter Your Age", 26);
+        let dob = prompt("Enter Your DOB", "dd-mm-yyyy");
+        let address = prompt("Enter Your Address", "Coimbatore");
+        console.log(divider);
+        console.log(`#     ${title}     #`);
+        console.log(divider);
+        console.log(`#     First Name:${firstName}                 #`);
+        console.log(`#     Last Name:${lastName}                   #`);
+        console.log(`#     Email Id:${emailId}                     #`);
+        console.log(`#     Phone Number:${Number(phoneNumber)}     #`);
+        console.log(`#     Course:${course}                        #`);
+        console.log(`#     Age:${Number(age)}                      #`);
+        console.log(`#     Date of Birth:${dob}                    #`);
+        console.log(`#     Address:${address}                      #`);
+        console.log(divider);
+
+
+
+        // let numberOne = prompt("Enter the value for number one", 10); // "5"
+        // let numberTwo = prompt("Enter the value for number two", 10); // "8"
+        // console.log(numberOne);
+        // console.log(numberTwo);
+        // console.log(`The sum of ${numberOne} and ${numberTwo} is: ${Number(numberOne) + Number(numberTwo)}`);
+    </script>
+
+
+</body>
+
+</html>

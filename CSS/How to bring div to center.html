@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="Description" content="How to Bring Div to center">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* First Method using position */
+        /* .parent_div {
+            width: 100vw;
+            height: 100vh;
+            background: purple;
+            position: relative;
+        }
+
+        .child_div {
+            text-align: center;
+            width: 60vw;
+            height: 60vh;
+            background: green;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+
+        /* Second Method using flex */
+        /* .parent_div {
+            width: 100vw;
+            height: 100vh;
+            background: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .child_div {
+
+            text-align: center;
+            width: 60vw;
+            height: 60vh;
+            background: green;
+
+        } */
+
+        /* Third Method using grid */
+
+
+        .parent_div {
+            width: 100vw;
+            height: 100vh;
+            background: purple;
+            display: grid;
+            place-items: center;
+
+
+        }
+
+        .child_div {
+
+            text-align: center;
+            width: 60vw;
+            height: 60vh;
+            background: green;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent_div">
+        <div class="child_div">
+            <h1>Welcome to CSS Class </h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

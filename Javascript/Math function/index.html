@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Math Random Function">
+    <title>Math Random Function</title>
+</head>
+
+<body>
+    <h1>Math Random Function</h1>
+
+    <script>
+        // let startingNumber = +prompt("Enter the Starting Number(min)");
+        // let endingNumber = +prompt("Enter the Ending Number(max)");
+
+        function mathRandom(startingNumber, endingNumber) {
+            console.log(Math.floor((Math.random() * (endingNumber - startingNumber) + startingNumber)));
+            //          math.floor((Math.random()*(85-65)+65))   18.66666+65 = 83.6666   =  83 
+            //          math.floor((Math.random()*(45-55)+55))   -4.5555+55 = 51.5555   =  51 
+
+            
+        };
+        mathRandom(55, 45); //45-55=-5 -4+55=51
+        mathRandom(65, 85);
+
+
+        // 
+        //100-10=90  87+10=97   
+        //50-45=5  4+45=49
+        // 10 and 100
+    </script>
+</body>
+
+</html>

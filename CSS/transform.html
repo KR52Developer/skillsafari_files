@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Transform">
+    <title>Transform</title>
+
+
+    <style>
+        .transform_container {
+            display: flex;
+        }
+
+        /* Transform
+        1.Translate
+        2.scale
+        3.Rotate
+        4.Skew
+         */
+
+
+        /* Translate */
+        .translate {
+            height: 200px;
+            width: 200px;
+            background: red;
+            margin: 0 auto;
+
+        }
+
+        .translate:hover {
+            transform: translatex(50px);
+        }
+
+
+        /* 
+        scale
+     */
+
+        .scale {
+            height: 200px;
+            width: 200px;
+            background: rgb(0, 255, 76);
+            margin: 0 auto;
+
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+
+
+        h1 {
+            color: white;
+        }
+
+
+
+
+        /* Rotate */
+
+        .rotate {
+            height: 200px;
+            width: 200px;
+            background: rgb(212, 255, 0);
+            margin: 0 auto;
+            transform: rotate(45deg);
+
+        }
+
+        /* .rotate:hover {
+            transform: rotate(45deg);
+        } */
+
+
+
+        h1 {
+            color: white;
+        }
+
+        /* skew */
+        .skew {
+            height: 200px;
+            width: 200px;
+            background: rgb(212, 255, 0);
+            margin: 0 auto;
+           
+
+        }
+
+        .skew:hover {
+            transform: skewx(80deg);
+        }
+
+
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transform_container">
+
+
+        <div class="translate">
+            <h1>Translate</h1>
+        </div>
+
+        <div class="scale">
+            <h1>scale</h1>
+        </div>
+
+        <div class="rotate">
+            <h1>rotate</h1>
+        </div>
+        <div class="skew">
+            <h1>skew</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

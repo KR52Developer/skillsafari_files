@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #151515;
+    color: white;
+}
+
+.header {
+    margin-top: 25px;
+    /* background: white; */
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    display: flex;
+    /* padding: 20px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    color: white;
+    /* padding-left: 179px; */
+}
+
+.social_Icons {
+    z-index: 1;
+    /* color: white; */
+    /* padding: 10px; */
+    margin-right: 50px;
+    background: transparent;
+}
+
+.fa-brands {
+    padding: 0px 15px;
+    background: transparent;
+    color: black;
+    z-index: 2;
+}
+
+
+.banner {
+    /* background: white; */
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    margin-top: -62px;
+    padding: 150px 0;
+    /* background: url("../Images/portfolio_Image1.jpg"), white; */
+    background: url("../Images/portfolio_Image1.jpg");
+    /* backdrop-filter: rgb(21, 19, 19); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    /* background: white; */
+    /* opacity: 0.2; */
+
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.left_Banner {
+    background: transparent;
+    padding-top: 55px;
+}
+
+.intro {
+    font-size: 94px;
+    font-weight: 200;
+    /* padding: 0 50px; */
+    /* padding-top: 25px; */
+    /* padding-bottom: 5px; */
+    background: transparent;
+}
+
+.divider {
+    background: aqua;
+    height: 3px;
+    width: 420px;
+    /* text-align: right; */
+    margin-bottom: 20px;
+    margin-left: 135px;
+}
+
+.short_Description {
+    /* padding: 5px; */
+    /* padding-left: 50px; */
+    padding: 25px 0;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+.contact_Me {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    border: 2px solid cyan;
+    /* margin: 50px; */
+    margin-top: 20px;
+    padding: 15px;
+    /* padding-left: 0; */
+    transition: all 0.3s ease;
+    /* border: 2px solid red ; */
+}
+
+
+/* .contact_Me:hover {
+    border: 2px solid cyan;
+    padding: 15px;
+    padding-left: 15px;
+} */
+
+/* .portfolio_Image {
+    margin-top: -300px;
+} */
+
+
+
+.divider_one {
+    background: white;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    background-color: rgb(125, 124, 124);
+    padding: 3px;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    height: 1px;
+    /* width: 75%; */
+    position: relative;
+    left: 10%;
+    right: 10%;
+}
+
+.skills {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 75px;
+    /* padding: 25px;
+    padding-left: 200px; */
+    /* place-items: start; */
+    /* padding: 25px 0;
+    background: white; */
+
+}
+
+.skill {
+    padding: 25px 0;
+    /* background: white; */
+}
+
+.skill_Heading {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.skill_Description {
+    color: rgb(125, 124, 124);
+}
+
+.project_Head {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px 150px; */
+}
+
+.project_Head>h1 {
+    font-size: 50px;
+}
+
+.project_Contact {
+
+    margin: 0px;
+    margin-top: 0px;
+    padding: 15px;
+    /* padding-left: 0; */
+    transition: all 0.3s ease;
+}
+
+
+/* .project_Contact:hover {
+    border: 2px solid cyan;
+    padding: 5px;
+    padding-left: 5px;
+} */
+
+.portfolios {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 55px;
+    /* flex-grow: 1; */
+    /* place-items: center; */
+    /* padding: 25px;
+    padding-left: 150px; */
+    padding: 100px 0px;
+}
+
+.portfolio {
+    padding: 10px 0;
+
+}
+
+/* .portfolios :nth-child(2) {
+    padding-left: 10px;
+} */
+
+.portfolio_Heading {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+
+.portfolio_Description {
+    margin-bottom: 35px;
+}
+
+.footer_Container {
+    background: rgb(31, 29, 29)
+}
+
+.footer {
+    position: relative;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    background: rgb(31, 29, 29);
+    /* padding: 150px; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_Left {
+    background: rgb(31, 29, 29);
+    padding: 50px 0;
+    margin-right: 225px;
+    width: 50%;
+
+}
+
+.footer_right {
+    /* position: relative;
+    right: 0%; */
+    background: rgb(31, 29, 29);
+    padding: 50px 0;
+}
+
+
+.footer_Heading {
+    background: rgb(31, 29, 29);
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.footer_Description {
+    background: rgb(31, 29, 29);
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px
+}
+
+.form {
+    background: rgb(31, 29, 29);
+}
+
+input,
+textarea {
+    font-size: 20px;
+    color: white;
+    background: rgb(31, 29, 29);
+    height: 40px;
+    width: 95%;
+    padding: 25px;
+    margin: 10px;
+    outline: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+.form_btn {
+    background-color: transparent;
+    color: white;
+    border: transparent;
+    border-bottom: 2px solid cyan;
+    padding: 15px;
+    /* padding-left: 0; */
+    transition: all 0.3s ease;
+    position: relative;
+    left: 65%;
+}
+
+.footer_bottom {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    margin-top: 50px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(31, 29, 29);
+}
+
+.footer_logo {
+    background: rgb(31, 29, 29);
+}
+
+.fo_Icons {
+   
+    background: rgb(31, 29, 29);
+    margin-right: 0px;
+}
+
+.footer_Icon {
+    color: white;
+}
+
+.footer_divider {
+   margin: 25px 0;
+   margin-bottom: 25px;
+}
